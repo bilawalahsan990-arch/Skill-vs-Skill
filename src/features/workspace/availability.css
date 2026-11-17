@@ -1,0 +1,639 @@
+.availability-page {
+  gap: 22px;
+}
+
+.availability-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #748297;
+  font-size: 9px;
+}
+
+.availability-status i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #15a474;
+}
+
+.availability-overview {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 13px 15px;
+  background: linear-gradient(110deg, #f2faf5, #fff);
+}
+
+.availability-calendar-icon {
+  display: inline-grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 9px;
+  background: #e1f4e8;
+  color: #078763;
+  font-size: 16px;
+}
+
+.availability-overview > span:last-child {
+  display: grid;
+  gap: 4px;
+}
+
+.availability-overview strong {
+  color: #344157;
+  font-size: 10px;
+}
+
+.availability-overview small {
+  color: #8995a3;
+  font-size: 8px;
+}
+
+.availability-section {
+  display: grid;
+  gap: 12px;
+}
+
+.availability-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.availability-section-heading h2 {
+  margin-top: 5px;
+  color: #2d3a50;
+  font-size: 16px;
+}
+
+.purple-text {
+  color: #8171c6;
+}
+
+.timetable-count {
+  padding: 5px 8px;
+  border-radius: 12px;
+  font-size: 8px;
+  font-weight: 650;
+}
+
+.timetable-count.green {
+  background: #e9f7ee;
+  color: #11815f;
+}
+
+.timetable-count.purple {
+  background: #f0edff;
+  color: #7362bc;
+}
+
+.availability-day-selector {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.availability-day-selector button {
+  position: relative;
+  display: flex;
+  min-height: 37px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #e7ece9;
+  border-radius: 8px;
+  background: #fff;
+  color: #758197;
+  font: inherit;
+  font-size: 9px;
+  cursor: pointer;
+}
+
+.availability-day-selector button.is-active {
+  border-color: #0a936c;
+  background: #078b67;
+  color: #fff;
+  font-weight: 700;
+}
+
+.availability-day-selector.learning button.is-active {
+  border-color: #8171c6;
+  background: #8171c6;
+}
+
+.availability-day-selector button small {
+  font-size: 8px;
+}
+
+.timetable-card {
+  padding: 16px;
+}
+
+.timetable-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.timetable-header h2 {
+  color: #354258;
+  font-size: 12px;
+}
+
+.timetable-header p {
+  margin-top: 4px;
+  color: #97a1ae;
+  font-size: 8px;
+}
+
+.timetable-day-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #eef1ef;
+}
+
+.timetable-day-heading h3 {
+  color: #425067;
+  font-size: 10px;
+}
+
+.timetable-day-heading span {
+  color: #929eac;
+  font-size: 8px;
+}
+
+.timetable-slots {
+  display: grid;
+  gap: 7px;
+}
+
+.availability-slot-row {
+  display: flex;
+  min-height: 55px;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 10px;
+  border: 1px solid #eaf0ec;
+  border-radius: 8px;
+  background: #fcfdfc;
+}
+
+.slot-type-icon {
+  display: inline-grid;
+  width: 29px;
+  height: 29px;
+  flex: 0 0 29px;
+  place-items: center;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.slot-type-icon.green {
+  background: #e7f7ed;
+  color: #0b8964;
+}
+
+.slot-type-icon.purple {
+  background: #f0edff;
+  color: #7765c3;
+}
+
+.availability-slot-copy {
+  display: grid;
+  flex: 1;
+  gap: 4px;
+}
+
+.availability-slot-copy > strong {
+  color: #415067;
+  font-size: 9px;
+}
+
+.availability-slot-copy > strong small {
+  color: #617086;
+  font-size: 9px;
+  font-weight: 550;
+}
+
+.availability-slot-copy > span {
+  color: #99a3ae;
+  font-size: 8px;
+}
+
+.remove-slot-button {
+  width: 25px;
+  height: 25px;
+  flex-basis: 25px;
+  border-color: transparent;
+  color: #9aa4b0;
+  font-size: 17px;
+}
+
+.remove-slot-button:hover {
+  border-color: #f2d9d7;
+  background: #fff8f7;
+  color: #c7554d;
+}
+
+.availability-empty {
+  display: grid;
+  min-height: 76px;
+  justify-items: center;
+  align-content: center;
+  gap: 5px;
+  border: 1px dashed #e2e9e5;
+  border-radius: 8px;
+  color: #8e9aa8;
+}
+
+.availability-empty > span {
+  color: #0a8b67;
+  font-size: 16px;
+}
+
+.availability-empty p {
+  font-size: 8px;
+}
+
+.add-availability-button {
+  min-height: 31px;
+  margin-top: 9px;
+  border-style: dashed;
+  background: #fbfdfb;
+}
+
+.availability-save {
+  justify-self: end;
+}
+
+.availability-day-note {
+  color: #7f8b9b;
+  font-size: 10px;
+}
+
+.availability-day-note strong {
+  color: #078763;
+}
+
+.profile-page {
+  gap: 19px;
+}
+
+.my-profile-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(250px, 0.65fr);
+  align-items: start;
+  gap: 16px;
+}
+
+.member-profile-summary {
+  padding: 0 18px 15px;
+  overflow: hidden;
+}
+
+.member-profile-cover {
+  height: 86px;
+  margin: 0 -18px;
+  background:
+    radial-gradient(circle at 85% 20%, rgb(255 255 255 / 14%), transparent 7rem),
+    linear-gradient(110deg, #078862, #08a176);
+}
+
+.member-profile-identity {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: -26px;
+}
+
+.member-profile-identity > .avatar {
+  width: 61px;
+  height: 61px;
+  flex-basis: 61px;
+  border: 4px solid #fff;
+  font-size: 15px;
+}
+
+.member-profile-name {
+  flex: 1;
+  padding-top: 24px;
+}
+
+.member-profile-name h2 {
+  color: #354258;
+  font-size: 13px;
+}
+
+.member-profile-name > p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5px;
+  color: #8995a3;
+  font-size: 8px;
+}
+
+.profile-online {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #6e7d90;
+}
+
+.profile-online i {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #12a473;
+}
+
+.member-profile-identity .button {
+  min-height: 29px;
+  margin-top: 22px;
+  font-size: 8px;
+}
+
+.member-profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 14px;
+  border-top: 1px solid #eef1ef;
+  padding-top: 13px;
+}
+
+.member-profile-stats article {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  border-right: 1px solid #eef1ef;
+}
+
+.member-profile-stats article:last-child {
+  border-right: 0;
+}
+
+.member-profile-stats article > span {
+  color: #dd9d33;
+  font-size: 10px;
+}
+
+.member-profile-stats strong {
+  color: #344157;
+  font-size: 14px;
+}
+
+.member-profile-stats small {
+  color: #929dab;
+  font-size: 7px;
+}
+
+.profile-skill-panels {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.profile-skill-panels .profile-section {
+  padding: 14px;
+}
+
+.profile-skill-panels .section-heading {
+  align-items: center;
+  min-height: 31px;
+}
+
+.profile-featured-skill {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  align-items: center;
+  gap: 8px;
+  margin-top: 9px;
+  padding: 8px;
+  border: 1px solid #edf1ee;
+  border-radius: 8px;
+  background: #fff;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.profile-featured-skill:hover {
+  border-color: #cfe7d8;
+  background: #fbfdfb;
+}
+
+.profile-featured-skill > .skill-mark {
+  width: 28px;
+  height: 28px;
+  flex-basis: 28px;
+  font-size: 10px;
+}
+
+.flutter-mark {
+  background: #e7f5ff;
+  color: #1687bc;
+}
+
+.profile-featured-skill > span:nth-child(2) {
+  display: grid;
+  min-width: 0;
+  flex: 1;
+  gap: 4px;
+}
+
+.profile-featured-skill strong {
+  overflow: hidden;
+  color: #455168;
+  font-size: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-featured-skill small {
+  overflow: hidden;
+  color: #96a0ae;
+  font-size: 7px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.profile-featured-skill .skill-action {
+  padding: 4px 5px;
+  font-size: 7px;
+  white-space: nowrap;
+}
+
+.profile-history-section {
+  padding: 16px;
+}
+
+.history-filter {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eef1ef;
+}
+
+.history-filter button {
+  padding: 5px 8px;
+  border: 1px solid #e8edeb;
+  border-radius: 12px;
+  background: #fff;
+  color: #8692a1;
+  font: inherit;
+  font-size: 7px;
+  cursor: pointer;
+}
+
+.history-filter button.is-active {
+  border-color: #078b67;
+  background: #078b67;
+  color: #fff;
+}
+
+.history-item {
+  display: grid;
+  grid-template-columns: 29px minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 1px;
+  border-bottom: 1px solid #eef1ef;
+}
+
+.history-item:last-child {
+  border-bottom: 0;
+}
+
+.history-item > .avatar {
+  width: 28px;
+  height: 28px;
+  flex-basis: 28px;
+  font-size: 7px;
+}
+
+.history-item > div {
+  display: grid;
+  gap: 4px;
+}
+
+.history-item > div strong {
+  color: #455168;
+  font-size: 8px;
+}
+
+.history-item > div small {
+  color: #939eac;
+  font-size: 7px;
+}
+
+.history-topic {
+  margin-left: 4px;
+  color: #078763;
+  font-size: 7px;
+  font-weight: 550;
+}
+
+.history-rating {
+  color: #b98229;
+  font-size: 8px;
+}
+
+.history-item time {
+  color: #a1aab4;
+  font-size: 7px;
+}
+
+.history-item > p {
+  grid-column: 2 / -1;
+  color: #7d8999;
+  font-size: 8px;
+  line-height: 1.5;
+}
+
+.profile-token-card > strong {
+  display: block;
+  margin-top: 11px;
+  color: #078763;
+  font-size: 20px;
+}
+
+.profile-token-card > strong small {
+  color: #909cab;
+  font-size: 8px;
+  font-weight: 450;
+}
+
+@media (max-width: 900px) {
+  .my-profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-aside {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .profile-token-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 650px) {
+  .profile-skill-panels {
+    grid-template-columns: 1fr;
+  }
+
+  .marketplace-heading {
+    align-items: flex-end;
+  }
+
+  .marketplace-heading .experts-count {
+    align-self: flex-start;
+  }
+
+  .skill-detail-rating {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .availability-day-selector {
+    grid-template-columns: repeat(7, minmax(36px, 1fr));
+    gap: 3px;
+  }
+
+  .availability-day-selector button {
+    min-height: 34px;
+    font-size: 8px;
+  }
+
+  .availability-day-selector button small {
+    display: none;
+  }
+
+  .member-profile-identity {
+    flex-wrap: wrap;
+  }
+
+  .member-profile-identity .button {
+    margin: 0 0 0 71px;
+  }
+
+  .member-profile-name h2 {
+    font-size: 11px;
+  }
+
+  .profile-featured-skill .skill-action {
+    display: none;
+  }
+}
